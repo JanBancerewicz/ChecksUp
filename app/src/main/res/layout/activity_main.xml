@@ -34,6 +34,7 @@
             android:fontFamily="monospace"
             android:text="+"
             android:textSize="25dp"
+            android:onClick="onClickPlus"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -46,13 +47,14 @@
             android:fontFamily="monospace"
             android:text="—"
             android:textSize="25dp"
+            android:onClick="onClickMinus"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="match_parent"
 
         android:layout_marginTop="20dp"
         android:layout_marginLeft="5dp"
@@ -144,16 +146,98 @@
 
                 tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
-            <TextView
-                android:id="@+id/tv"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-
+                android:orientation="vertical"
+                android:id="@+id/prompt"
+                android:visibility="visible"
+                android:layout_marginTop="50dp"
                 >
 
-            </TextView>
+                <EditText
+                    android:id="@+id/promptcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#BE34A4C6"
+                    android:hint="Type the text here and choose a nubmer below"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="18sp" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE34A4C6"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/promptIncrease"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#4B9836"
+                        android:fontFamily="monospace"
+                        android:onClick="promptIncrease"
+                        android:text="+"
+                        android:textSize="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/itemvalue"
+                        android:layout_width="50dp"
+                        android:layout_height="55dp"
+
+                        android:fontFamily="serif-monospace"
+                        android:maxLength="1"
+                        android:paddingLeft="12dp"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="45dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/promptDecrease"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#AA3030"
+                        android:fontFamily="monospace"
+                        android:onClick="promptDecrease"
+                        android:text="—"
+                        android:textSize="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/itemsave"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="#BE0C7291"
+                        android:fontFamily="monospace"
+                        android:onClick="promptSaveOnClick"
+
+                        android:text="Change text"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hideprompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C1C1C1"
+                android:text="Hide"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:onClick="promptHide"
+                />
 
         </LinearLayout>
 
