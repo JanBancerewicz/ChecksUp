@@ -216,10 +216,10 @@ public class MainActivity extends AppCompatActivity {
 
         if(_prompt.getVisibility()==View.VISIBLE){
             _prompt.setVisibility(View.INVISIBLE);
-            _hideprompt.setText("SHOW");
+            _hideprompt.setText("Show");
         }else{
             _prompt.setVisibility(View.VISIBLE);
-            _hideprompt.setText("HIDE");
+            _hideprompt.setText("Hide");
         }
 
 
