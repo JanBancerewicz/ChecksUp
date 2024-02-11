@@ -29,6 +29,10 @@ git clone https://github.com/JanBancerewicz/ChecksUp.git
 Alternatively, you can download the APK file from the official website and install it manually on your device.
 
 ## Usage
+Default app preview:
+
+![rsz_screenshot_20240211_001250_checksup](https://github.com/JanBancerewicz/ChecksUp/assets/79080628/95cddf2d-3e77-4e8a-8b89-cdd9d919db8e)
+
 Default app setup:
 
 1. **Launch:** Open the ChecksUp app on your Android device.
