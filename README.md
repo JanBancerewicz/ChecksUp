@@ -3,8 +3,10 @@
 ChecksUp is a Java-based Android mobile application designed for entertainment purposes. It generates combinations of exclusive switches, providing user with a fun way to explore various patterns and designs.
 
 ## Preview
+View before and after tapping third switch: 
 
-After tapping third switch: 
+![sscheck](https://github.com/JanBancerewicz/ChecksUp/assets/79080628/c65cc062-8044-4d29-9d15-4e6e17d1efb2)
+
 
 ## Features
 
@@ -27,6 +29,10 @@ git clone https://github.com/JanBancerewicz/ChecksUp.git
 Alternatively, you can download the APK file from the official website and install it manually on your device.
 
 ## Usage
+Default app preview:
+
+![rsz_screenshot_20240211_001250_checksup](https://github.com/JanBancerewicz/ChecksUp/assets/79080628/95cddf2d-3e77-4e8a-8b89-cdd9d919db8e)
+
 Default app setup:
 
 1. **Launch:** Open the ChecksUp app on your Android device.
